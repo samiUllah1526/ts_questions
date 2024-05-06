@@ -15,6 +15,13 @@ export default function Home() {
     console.log(data);
   };
 
+  //   Custom hook usage
+  //   const fields = ["floor", "room_number"] as const;
+  //   const fieldsValues = useWatchFields({
+  //     control,
+  //     name: fields,
+  //   });
+
   const fieldsValues = useWatch({
     control,
     name: ["floor", "room_number"],
